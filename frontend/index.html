@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AI Circuit Designer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+  <!-- LEFT PANEL -->
+  <div class="left">
+    <h2>⚡ AI Circuit Designer</h2>
+
+    <div id="chat"></div>
+
+    <div class="input-area">
+      <input id="msg" placeholder="Describe your circuit..." />
+      <button onclick="send()">Send</button>
+      <button onclick="generate()">Generate</button>
+    </div>
+  </div>
+
+  <!-- RIGHT PANEL -->
+  <div class="right">
+    <h2>🔧 Schematic</h2>
+    <svg id="canvas"></svg>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
